@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<title>Airline-delay-Prediction App</title>
+<body>
+
+<form action = "/getdelay" method="POST">
+	<p> Select your age :
+	<select name="patient_age">
+		<option value="0">Under 35</option>
+		<option value="1">Between 35 and 37 years old</option>
+		<option value="2">Between 38 and 39 years old</option>
+		<option value="3">Between 40 and 42 years old</option>
+		<option value="4">Between 43 and 44 years old</option>
+		<option value="5">Between 45 and 50 years old</option>
+	</select>
+	<p> <input name="inf_endom" type ="checkbox" value="JFK" />Endometriosis</p>
+	<p> <input name="inf_tubal" type ="checkbox" value="JFK" />Tubal Disease</p>
+	<p> <input name="inf_sperm_mot" type ="checkbox" value="JFK" />Sperm Motility</p>
+	<p> <input name="inf_sperm_morpho" type ="checkbox" value="JFK" />Sperm Morphology</p>
+	<p> <input name="inf_sperm_concentration" type ="checkbox" value="JFK" />Sperm Concentration</p>
+	<p> <input name="inf_sperm_concentration" type ="checkbox" value="JFK" />Sperm Concentration</p>
+	<p> <input name="inf_sperm_immuno" type ="checkbox" value="JFK" />Sperm Immunology</p>
+
+	<p> <input name="stimulation_used" type ="checkbox" value="LAX" /> Stimulation used during protocol</p>
+
+	<p> Sperm from:
+	<select name="sperm_from">
+		<option value="sperm_patient">Patient</option>
+		<option value="sperm_donor">Donor</option>
+		<option value="sperm_patient_donor">Patient & Donor</option>
+	</select>
+
+	<p> Eggs from:
+	<select name="egg_from">
+		<option value="egg_patient">Patient</option>
+		<option value="egg_donor">Donor</option>
+	</select>
+
+	<p> Number of previous IVF or DI cycles:
+	<select name="egg_from">
+		<option value="0">Never done</option>
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5</option>
+		<option value=">5">Over 5</option>
+	</select>
+
+	<p> <input type ="submit" value="submit" /> </p>
+</form>
+</body>
+</html>
